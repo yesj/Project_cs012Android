@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">cs012</string>
+    <string name="font_path">fonts/trebucbd.ttf</string>
+    <string name="normal_font_path">fonts/trebuc.ttf</string>
+    <string name="action_settings">Settings</string>
+    <string name="connect_bluetooth">Connect</string>
+    <string name="select_device">Select a device</string>
+    <string name="scanning">Scanning for devices</string>
+    <string name="ble_not_supported">Bluetooth Low Energy not supported</string>
+    <string name="scan">Scan</string>
+    <string name="paired">paired</string>
+    <string name="cancel">Cancel</string>
+    <string name="tv_heart_string">HEART RATE:</string>
+    <string name="btn_select_string">Connect</string>
+    <string name="btn_updata_string">UP DATA</string>
+	<string name="progress">%d%%</string>
+	<string name="permission_log_label">read and write log</string>
+    <string name="permission_log_description">Allows the app to write and read from Nordic Semiconductor Event log</string>
+    
+</resources>

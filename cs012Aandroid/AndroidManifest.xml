@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alatech.cs012"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+	<permission android:name="no.nordicsemi.android.LOG" 
+	    		android:label="@string/permission_log_label" 
+	    		android:description="@string/permission_log_description" 
+	    		android:icon="@drawable/ic_permission_log"  />
+	    
+    
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="no.nordicsemi.android.LOG" />
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.alatech.cs012.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DeviceListActivity" android:theme="@android:style/Theme.Holo.Dialog" android:label="@string/app_name"></activity>
+        <service android:name=".UartService"></service>
+        <service android:name="DfuService" android:label="@string/dfu_service_title" android:exported="true">
+            <intent-filter>
+                <action android:name="no.nordicsemi.android.action.DFU_UPLOAD"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <activity android:name="NotificationActivity" android:label="@string/dfu_feature_title"></activity>
+    </application>
+
+</manifest>

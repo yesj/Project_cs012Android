@@ -1,0 +1,98 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alatech.cs012.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+
+        
+	    <LinearLayout
+	        android:id="@+id/linearLayout2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	
+	        <TextView
+	            android:id="@+id/tv_heart"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/tv_heart_string" />
+	
+	        <TextView
+	            android:id="@+id/heart_value"
+	            android:layout_width="106dp"
+	            android:layout_height="34dp" />
+	
+	        <Button
+	            android:id="@+id/btn_select"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="12sp"
+	            android:onClick="onSelectClicked"
+	            android:text="@string/btn_select_string" />
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:id="@+id/linearLayout3"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	
+	        <Button
+	            android:id="@+id/btn_updata"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:padding="12sp"
+                android:enabled="true"
+				android:onClick="onUpDataClicked"
+	            android:text="@string/btn_updata_string" />
+	        
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:id="@+id/linearLayout4"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:orientation="horizontal" >
+
+            <ProgressBar
+                android:id="@+id/progressbar_file"
+                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:visibility="visible" />
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:id="@+id/linearLayout5"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:orientation="horizontal" >
+
+	        <TextView
+	            android:id="@+id/textviewProgress"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="TextView" />
+
+	    </LinearLayout>
+
+	    
+    </LinearLayout>
+    
+
+    
+
+    
+</FrameLayout>
+
